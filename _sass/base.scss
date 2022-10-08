@@ -1,0 +1,129 @@
+@import url('http://fonts.cdnfonts.com/css/playfair-display');
+@import url('http://fonts.cdnfonts.com/css/futura-pt');
+
+//Colors
+$nile-navy: #15456d;
+$nile-azure: #257994;
+
+.nile-navy {
+  background-color: $nile-navy !important;
+  border-color: $nile-navy !important;
+};
+
+.nile-check {
+  color: #15456d;
+}
+
+//General
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+}
+
+main > div {
+  height: 10rem;
+  margin: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: gray;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.navigation{
+    font-family: 'Futura PT', sans-serif;
+}
+
+
+// Features cards
+.wrapper{margin:10vh}
+//post card styles
+
+.card{
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow:hidden;
+  border-radius:20px;
+  min-height:450px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+
+  @media (max-width: 768px) {
+  min-height:350px;
+}
+
+@media (max-width: 420px) {
+  min-height:300px;
+}
+
+  &.card-has-bg{
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: auto 120%;
+  background-repeat:no-repeat;
+  background-position: center center;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);}
+
+  &:hover {
+    transform: scale(0.98);
+      box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+      background-size: auto 130%;
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    .card-img-overlay {
+      overflow: hidden !important;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background: rgb(35,79,109);
+      background: linear-gradient(0deg, rgba(21,69,109,0.5) 0%, rgba(37,121,148,1) 100%);
+      }
+  }
+}
+  .card-footer{
+  background: none;
+    border-top: none;
+    .media{
+      img{
+        border:solid 3px rgba(255,255,255,0.3);
+      }
+    }
+  }
+  .card-meta{color:#26BD75}
+  .card-body{
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+  &:hover {
+    .card-body{
+      margin-top:30px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+  .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: rgb(35,79,109);
+background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69,95,113,1) 100%);
+}
+}
+@media (max-width: 767px){
+
+}

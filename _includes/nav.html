@@ -1,0 +1,25 @@
+<div class="container navigation">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="{{ site.baseurl }}" class=" navbar-brand d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img src="/assets/nile-logo-no-text.png" alt="Nile Global Trading" width="50" height="50">    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Services
+        </a>
+        <ul class="dropdown-menu">
+          {% for service in site.services %}
+            <li><a class="dropdown-item" href="{{ service.url | relative_url }}">{{ service.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+      <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+    </ul>
+    <div class="col-md-3 text-end">
+      <a href="#" class="btn btn-primary nile-navy" role="button">Get a Free Proposal</a>
+    </div>
+  </header>
+</div>
