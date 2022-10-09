@@ -219,7 +219,7 @@ bodyClass: "page-home"
     </div>
   </div>
 </section>
-<!-- Accordion -->
+<!-- Accordion
 <section class="wrapper">
   <div class="container">
     <div class="row justify-content-md-center">
@@ -240,4 +240,41 @@ bodyClass: "page-home"
       </div>
     </div>
   </div>
+</section> -->
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio wrapper">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <div class="col text-center mb-5">
+      <h2 class="display-6 fw-bold">Products We Work With</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    </div>
+
+    <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <li data-filter="*" class="filter-active">All</li>
+      {% assign categories =  site.products | map: 'categories' | join: ','  | split: ',' | uniq %}
+      {% for category in categories %}
+      <li data-filter=".filter-{{ category | downcase | replace: ' ', '' }}">{{ category }}</li>
+      {% endfor %}
+    </ul>
+
+    <div class="row portfolio-container" data-aos="" data-aos-delay="200">
+      {% for product in site.products %}
+      {% assign product_cat =  product.categories | join: ',' | downcase | replace: ' ', '' %}
+      <div class="col-lg-4 col-md-6 portfolio-item filter-{{ product_cat }}">
+        <div class="portfolio-img"><img src="{{ product.image }}" class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>{{ product.title }}</h4>
+        </div>
+        <!-- Page link TO DO -->
+      <!-- <a href="{{ product.url | product_url }}" class="stretched-link"></a> -->
+      </div>
+    {% endfor %}
+    </div>
+
+  </div>
 </section>
+<!-- End Portfolio Section -->

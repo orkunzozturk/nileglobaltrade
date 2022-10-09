@@ -37,7 +37,8 @@ collections:
   services:
     output: true
     sort_by: weight
-
+  products:
+    output: true
 
 defaults:
   - scope:
@@ -50,7 +51,11 @@ defaults:
       type: "team"
     values:
       layout: "team"
-
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "products"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
