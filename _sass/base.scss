@@ -121,7 +121,7 @@ h1 {
   .card-img-overlay {
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
   background: rgb(35,79,109);
-background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69,95,113,1) 100%);
+  background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69,95,113,1) 100%);
 }
 }
 @media (max-width: 767px){
@@ -145,7 +145,6 @@ background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -179,9 +178,9 @@ background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 0px;
 }
