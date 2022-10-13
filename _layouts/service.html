@@ -60,7 +60,7 @@ bodyClass: "page-service"
             </div><!-- /lc-block -->
             <div class="lc-block mb-4">
               <div>
-                <h1 class="fw-bold h3 text-primary"><i class="{{ feature.symbol }} m-1"></i>{{ feature.name }}</h1>
+                <h1 class="fw-bold h3 text-primary"><i class="{{ feature.symbol }} m-1"></i><br>{{ feature.name }}</h1>
               </div>
             </div><!-- /lc-block -->
             {% for bullet in feature.bullets %}
@@ -76,6 +76,29 @@ bodyClass: "page-service"
         </div>
       </div><!-- /col -->
       {% endfor %}
+    </div>
+  </div>
+</section>
+  <section class="wrapper">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4 align-self-center">
+        <div class="lc-block border-top py-4" style="letter-spacing:10px">
+          <div editable="rich">
+            <h2><strong>{{page.content[header]}}</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="lc-block">
+          <div editable="rich">
+
+            <p><strong></strong></p>
+
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

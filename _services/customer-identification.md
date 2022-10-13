@@ -30,4 +30,10 @@ features:
       - We handle all the relevant paperwork
       - Legal assistance with sales agreements
       - Manage production quantities and shipping schedules easily
+content:
+  - header: How To Find Customers in China?
+    paragraphs:
+      - Test 1
+      - Test 2
+      - Test 3
 ---
