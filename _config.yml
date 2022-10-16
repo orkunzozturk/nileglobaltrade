@@ -49,11 +49,6 @@ defaults:
       layout: "service"
   - scope:
       path: ""
-      type: "team"
-    values:
-      layout: "team"
-  - scope:
-      path: ""
       type: "products"
     values:
       layout: "products"
