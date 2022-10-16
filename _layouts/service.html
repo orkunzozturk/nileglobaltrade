@@ -45,7 +45,7 @@ bodyClass: "page-service"
       <div class="col-xxl-7 col-lg-9">
         <div class="lc-block text-center">
           <div>
-            <p class="rfs-8"> See how our service can help you increase your sales and open your business to China
+            <p class="rfs-8"> See how our services can help you increase your sales and open your business to China
               success.</p>
           </div>
         </div><!-- /lc-block -->
@@ -59,8 +59,9 @@ bodyClass: "page-service"
             <div class="lc-block mb-3">
             </div><!-- /lc-block -->
             <div class="lc-block mb-4">
-              <div>
-                <h1 class="fw-bold h3 text-primary"><i class="{{ feature.symbol }} m-1"></i><br>{{ feature.name }}</h1>
+              <div class="fw-bold h3 text-primary">
+                <i class="{{ feature.symbol }} fa-2xl d-flex justify-content-center"></i>
+                <p class="fw-bold h3 text-primary text-center"><br>{{ feature.name }}</p>
               </div>
             </div><!-- /lc-block -->
             {% for bullet in feature.bullets %}
@@ -79,26 +80,45 @@ bodyClass: "page-service"
     </div>
   </div>
 </section>
-  <section class="wrapper">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-4 align-self-center">
-        <div class="lc-block border-top py-4" style="letter-spacing:10px">
-          <div editable="rich">
-            <h2><strong>{{page.content[header]}}</strong></h2>
-          </div>
-        </div>
+
+<!-- Alternating Content -->
+<section class="wrapper">
+  <div class="container-fluid p-0 overflow-hidden">
+{% for content in page.contents %}
+{% assign mod = forloop.index | modulo: 2 %}
+{% if mod == 1 %}
+    <div class="row g-0">
+      <div lc-helper="background" class="col-lg-6 order-lg-2 " style="min-height: 45vh; background-size: cover; background-position: center; background-image: url('{{ content.image | relative_url}}');">
+
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-6 order-lg-1 my-auto px-5 py-5">
         <div class="lc-block">
           <div editable="rich">
-
-            <p><strong></strong></p>
-
-
+            <h2>{{content.header}}</h2>
+            {% for paragraph in content.paragraphs %}
+            <p class="lead">{{ paragraph }}</p>
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
-  </div>
+    {% else %}
+
+    <div class="row g-0">
+      <div lc-helper="background" class="col-lg-6" style="min-height: 45vh; background-size: cover;background-position: center; background-image: url('{{ content.image | relative_url}}');">
+      </div>
+      <div class="col-lg-6 my-auto px-5 py-5">
+        <div class="lc-block">
+          <div editable="rich">
+            <h2>{{content.header}}</h2>
+            {% for paragraph in content.paragraphs %}
+            <p class="lead">{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
 </section>
