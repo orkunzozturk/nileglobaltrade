@@ -1,43 +1,21 @@
 members:
-- title: "Martin Ma 🇨🇳"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "Founder"
-  linkedinurl: ""
-  weight: 1
-- title: "Michael Woldemariam 🇪🇹"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
-- title: "William Shen 🇨🇳"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
-- title: "Friedrich Ab 🇧🇯🇫🇷"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
-- title: "Waleed Wal 🇸🇦"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
-- title: "Orkun Ozturk 🇹🇷"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
-- title: "Abdalla 🇸🇩"
-  date: 2018-11-19T10:47:58+10:00
-  image: ""
-  jobtitle: "asd"
-  linkedinurl: ""
-  weight: 1
+  - title: "Martin Ma 🇨🇳"
+    image: ""
+    jobtitle: "Co-Founder"
+    linkedinurl: ""
+    weight: 2
+  - title: "Michael Woldemariam 🇪🇹"
+    image: "images/team/michael.jpg"
+    jobtitle: "Co-Founder"
+    linkedinurl: ""
+    weight: 1
+  - title: "William Shen 🇨🇳"
+    image: "images/team/william.jpg"
+    jobtitle: "asd"
+    linkedinurl: ""
+    weight: 3
+  - title: "Hussein Daher"
+    image: "images/team/hussein.jpg "
+    jobtitle: "Middle East Sales Manager"
+    linkedinurl: ""
+    weight: 1

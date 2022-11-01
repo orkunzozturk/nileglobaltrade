@@ -2,6 +2,6 @@
 title: "Sesame"
 date: 2018-11-19T10:47:58+10:00
 layout: product
-image: images/services/find_customers.webp
+image: images/products/sesame.webp
 categories: ["Nuts and Seeds"]
 ---
