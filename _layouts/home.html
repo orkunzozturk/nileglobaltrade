@@ -2,107 +2,115 @@
 layout: default
 bodyClass: "page-home"
 ---
-  <div class="container-fluid overflow-hidden px-0 pb-6" style="height:auto">
-    <div class="row g-0">
-      <div class="col-6 order-md-2 d-none {% if page.intro_video_hide_on_mobile %}d-lg-block{% endif %}">
-        <div class="card" lc-helper="video-bg">
-          <video class="min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="" style="object-fit: cover; object-position: 50% 50%;">
-            <!-- adjust object-position to tweak cropping on mobile -->
-            <source src="{{ page.intro_video }}" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="col order-md-1 my-auto text-center" style="padding:10vw">
-
-        <div class="lc-block mb-3">
-          <div editable="rich">
-            <h2> Sell to China with Ease </h2>
-            <p class="lead"> Nile Global Trading empowers companies across the Belt and Road initiative to take advantage of naval and land routes, enabling them to sell products to China. </p>
-          </div>
-        </div>
-
-        <div class="lc-block">
-          <a class="btn btn-primary" href="#" role="button">Get Started</a>
-        </div><!-- /lc-block -->
-
+<div class="container-fluid overflow-hidden px-0 pb-6" style="height:auto">
+  <div class="row g-0">
+    <div class="col-6 order-md-2 d-none {% if page.intro_video_hide_on_mobile %}d-lg-block{% endif %}">
+      <div class="card" lc-helper="video-bg">
+        <video class="min-vh-100" autoplay="" preload="" muted="" loop="" playsinline=""
+          style="object-fit: cover; object-position: 50% 50%;">
+          <!-- adjust object-position to tweak cropping on mobile -->
+          <source src="{{ page.intro_video }}" type="video/mp4">
+        </video>
       </div>
     </div>
+    <div class="col order-md-1 my-auto text-center" style="padding:10vw">
+
+      <div class="lc-block mb-3">
+        <div editable="rich">
+          <h2> Sell to China with Ease </h2>
+          <p class="lead"> Nile Global Trading empowers companies across the Belt and Road initiative to take advantage
+            of naval and land routes, enabling them to sell products to China. </p>
+        </div>
+      </div>
+
+      <div class="lc-block">
+        <a class="btn btn-primary" role="button" data-tf-popup="ty3Af6CL" data-tf-size="100">Get Started</a>
+      </div><!-- /lc-block -->
+
+    </div>
   </div>
-  {%- comment -%} Alternating {%- endcomment -%}
+</div>
+{%- comment -%} Alternating {%- endcomment -%}
 
 <section class="wrapper">
   <div class="container-fluid overflow-hidden px-5 py-5" style="height:auto">
-      <div class="row mb-4 align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="lc-block text-center">
-            <img class="img-fluid w-auto" src="{{ 'images/china-obor.webp' | relative_url }}" srcset="" sizes="" width="" height="">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-lg-6 p-lg-6">
-          <div class="lc-block mb-5">
-            <div editable="rich">
-              <h2 class="display-6 fw-bold">Simplify International Trade from Inquiry to Delivery</h2>
-              <p class="lead"><br>Nile Global Trading is a full-chain international business service enabling companies across Africa and the Middle East to sell their products to China.</p>
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="lc-block text-center">
+          <img class="img-fluid w-auto" src="{{ 'images/china-obor.webp' | relative_url }}" srcset="" sizes="" width=""
+            height="">
+        </div><!-- /lc-block -->
+      </div><!-- /col -->
+      <div class="col-lg-6 p-lg-6">
+        <div class="lc-block mb-5">
+          <div editable="rich">
+            <h2 class="display-6 fw-bold">Simplify International Trade from Inquiry to Delivery</h2>
+            <p class="lead"><br>Nile Global Trading is a full-chain international business service enabling companies
+              across Africa and the Middle East to sell their products to China.</p>
+          </div>
+        </div><!-- /lc-block -->
+        <!-- /lc-block -->
+        <div class="lc-block">
+          <div class="d-inline-flex">
+            <div>
+              <i class="bi bi-check-circle-fill nile-check"></i>
             </div>
-          </div><!-- /lc-block -->
-          <!-- /lc-block -->
-          <div class="lc-block">
-            <div class="d-inline-flex">
-              <div>
-                <i class="bi bi-check-circle-fill nile-check"></i>
-              </div>
-              <div class="ms-3 align-self-center" editable="rich">
-                <p>Find new customers in China</p>
-              </div>
+            <div class="ms-3 align-self-center" editable="rich">
+              <p>Find new customers in China</p>
             </div>
           </div>
-          <div class="lc-block">
-            <div class="d-inline-flex">
-              <div>
-                <i class="bi bi-check-circle-fill nile-check"></i>
-              </div>
+        </div>
+        <div class="lc-block">
+          <div class="d-inline-flex">
+            <div>
+              <i class="bi bi-check-circle-fill nile-check"></i>
+            </div>
 
-              <div class="ms-3 align-self-center" editable="rich">
-                <p>Secure payments</p>
-              </div>
+            <div class="ms-3 align-self-center" editable="rich">
+              <p>Secure payments</p>
             </div>
           </div>
-          <div class="lc-block">
-            <div class="d-inline-flex">
-              <div>
-                <i class="bi bi-check-circle-fill nile-check"></i>
-              </div>
-
-              <div class="ms-3 align-self-center" editable="rich">
-                <p>Ship products with ease</p>
-              </div>
+        </div>
+        <div class="lc-block">
+          <div class="d-inline-flex">
+            <div>
+              <i class="bi bi-check-circle-fill nile-check"></i>
             </div>
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-      </div>
-      <div class="row mb-4 align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
-          <div class="lc-block text-center">
-            <img class="img-fluid w-auto" src="{{ 'images/china-trade-simplified.svg' | relative_url }}" srcset="" sizes="" width="" height="">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-lg-6 p-lg-6">
-          <div class="lc-block mb-5">
-            <div editable="rich">
 
-              <h2 class="display-6 fw-bold">Don’t Be Left Out of China Trade</h2>
-
-              <p class="lead"><br>
-                {%- comment -%} China is one of the largest export markets in the world for minerals, agricultural products, and raw materials. The Belt and Road Initiative creates advanced maritime and land logistics networks, enabling companies to reach out to large institutional buyers across China. {%- endcomment -%}
-
-                For all its advantages, trading with China comes with many challenges. Nile Global Trading saves you time and money and helps you avoid the pitfalls many companies face when trading with new Chinese buyers.</p>
+            <div class="ms-3 align-self-center" editable="rich">
+              <p>Ship products with ease</p>
             </div>
-          </div><!-- /lc-block -->
-          <!-- /lc-block -->
-            </div>
-          </div><!-- /lc-block -->
-      </div>
+          </div>
+        </div><!-- /lc-block -->
+      </div><!-- /col -->
     </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+        <div class="lc-block text-center">
+          <img class="img-fluid w-auto" src="{{ 'images/china-trade-simplified.svg' | relative_url }}" srcset=""
+            sizes="" width="" height="">
+        </div><!-- /lc-block -->
+      </div><!-- /col -->
+      <div class="col-lg-6 p-lg-6">
+        <div class="lc-block mb-5">
+          <div editable="rich">
+
+            <h2 class="display-6 fw-bold">Don’t Be Left Out of China Trade</h2>
+
+            <p class="lead"><br>
+              {%- comment -%} China is one of the largest export markets in the world for minerals, agricultural
+              products, and raw materials. The Belt and Road Initiative creates advanced maritime and land logistics
+              networks, enabling companies to reach out to large institutional buyers across China. {%- endcomment -%}
+
+              For all its advantages, trading with China comes with many challenges. Nile Global Trading saves you time
+              and money and helps you avoid the pitfalls many companies face when trading with new Chinese buyers.</p>
+          </div>
+        </div><!-- /lc-block -->
+        <!-- /lc-block -->
+      </div>
+    </div><!-- /lc-block -->
+  </div>
+  </div>
   </div>
 </section>
 {%- comment -%} FAQ {%- endcomment -%}
@@ -211,8 +219,8 @@ bodyClass: "page-home"
             <div class="card-body">
               <small class="card-meta mb-2">Services</small>
               <h3 class="card-title mt-0 "><a class="text-white" herf="#">{{ service.title }}</a></h4>
-              <p class="card-text">{{ service.description }}</p>
-              <a class="card-link stretched-link" href="{{ service.url | relative_url }}"></a>
+                <p class="card-text">{{ service.description }}</p>
+                <a class="card-link stretched-link" href="{{ service.url | relative_url }}"></a>
             </div>
           </div>
         </div>
@@ -229,14 +237,15 @@ bodyClass: "page-home"
 
     <div class="section-title">
       <div class="col text-center mb-5">
-      <h2 class="display-6 fw-bold">Products We Work With</h2>
-      <p class="lead">We have delivered customers all across Africa and the Middle East to China with these products and more</p>
-    </div>
+        <h2 class="display-6 fw-bold">Products We Work With</h2>
+        <p class="lead">We have delivered customers all across Africa and the Middle East to China with these products
+          and more</p>
+      </div>
     </div>
 
     <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
       <li data-filter="*" class="filter-active">All</li>
-      {% assign categories =  site.products | map: 'categories' | join: ','  | split: ',' | uniq %}
+      {% assign categories = site.products | map: 'categories' | join: ',' | split: ',' | uniq %}
       {% for category in categories %}
       <li data-filter=".filter-{{ category | downcase | replace: ' ', '' }}">{{ category }}</li>
       {% endfor %}
@@ -244,16 +253,16 @@ bodyClass: "page-home"
 
     <div class="row portfolio-container" data-aos="" data-aos-delay="200">
       {% for product in site.products %}
-      {% assign product_cat =  product.categories | join: ',' | downcase | replace: ' ', '' %}
+      {% assign product_cat = product.categories | join: ',' | downcase | replace: ' ', '' %}
       <div class="col-lg-4 col-md-6 portfolio-item filter-{{ product_cat }}">
         <div class="portfolio-img"><img src="{{ product.image }}" class="img-fluid" alt=""></div>
         <div class="portfolio-info">
           <h4>{{ product.title }}</h4>
         </div>
         <!-- Page link TO DO -->
-      <!-- <a href="{{ product.url | product_url }}" class="stretched-link"></a> -->
+        <!-- <a href="{{ product.url | product_url }}" class="stretched-link"></a> -->
       </div>
-    {% endfor %}
+      {% endfor %}
     </div>
 
   </div>

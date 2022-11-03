@@ -1,6 +1,6 @@
 members:
   - title: "Martin Ma 🇨🇳"
-    image: ""
+    image: "images/team/martin.jpg"
     jobtitle: "Co-Founder"
     linkedinurl: ""
     weight: 2
@@ -9,7 +9,7 @@ members:
     jobtitle: "Co-Founder"
     linkedinurl: ""
     weight: 1
-  - title: "William Shen 🇨🇳"
+  - title: "William Qian 🇨🇳"
     image: "images/team/william.jpg"
     jobtitle: "asd"
     linkedinurl: ""
