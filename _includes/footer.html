@@ -1,75 +1,90 @@
-
-
 <section class="wrapper">
-	<div class="container">
-		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-			<div class="col mb-3">
-				<div class="lc-block mb-3"><a class="navbar-brand" href="https://library.livecanvas.com/sections/">
-						<img class="img-fluid me-1" src="{{ site.logomark }}" alt="{{site.title}}" width="48px" height="48px" lc-helper="image">
-					</a></div>
-				<div class="lc-block">
-					<div editable="rich">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <div class="lc-block mb-3"><a class="navbar-brand" href="https://library.livecanvas.com/sections/">
+            <img class="img-fluid me-1" src="{{ site.logomark }}" alt="{{site.title}}" width="48px" height="48px"
+              lc-helper="image">
+          </a></div>
+        <div class="lc-block">
+          <div editable="rich">
 
-						<p class="text-muted">© 2022 Nile Global Trading Co., Ltd.</p>
-					</div>
-				</div>
+            <p class="text-muted">© 2022 Nile Global Trading Co., Ltd.</p>
+          </div>
+        </div>
 
-			</div>
-			<div class="col offset-md-2 mb-3">
-				<div class="lc-block mb-4">
-					<div editable="rich">
-						<a href="{% link about.md %}" class="text-decoration-none"><h4 class="">About Us</h4></a>
-					</div>
-				</div>
-				<!-- /lc-block -->
-				<div class="lc-block small"> <style>
-	.footer-links-list ul { padding-left:0 }
-	.footer-links-list ul li {margin-bottom:15px; list-style-type:none;padding-left:0 }
-	.footer-links-list a {text-decoration:none; color:var(--bs-body-color);}
+      </div>
+      <div class="col offset-md-2 mb-3">
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <a href="{% link about.md %}" class="text-decoration-none">
+              <h4 class="">About Us</h4>
+            </a>
+          </div>
+        </div>
+        <!-- /lc-block -->
+        <div class="lc-block small">
+          <style>
+            .footer-links-list ul {
+              padding-left: 0
+            }
 
-</style>
-				</div>
-				<!-- /lc-block -->
-			</div>
-			<div class="col mb-3">
-				<div class="lc-block mb-4">
-					<div editable="rich">
-						<h4>Services</h4>
-					</div>
-				</div>
-				<!-- /lc-block -->
-				<div class="lc-block small">
-					<div editable="rich" class="footer-links-list">
+            .footer-links-list ul li {
+              margin-bottom: 15px;
+              list-style-type: none;
+              padding-left: 0
+            }
 
-						<ul>
+            .footer-links-list a {
+              text-decoration: none;
+              color: var(--bs-body-color);
+            }
+
+          </style>
+        </div>
+        <!-- /lc-block -->
+      </div>
+      <div class="col mb-3">
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <h4>Services</h4>
+          </div>
+        </div>
+        <!-- /lc-block -->
+        <div class="lc-block small">
+          <div editable="rich" class="footer-links-list">
+
+            <ul>
               {% for service in site.services %}
-							<li><a href="#">{{ service.title }}</a> </li>
+              <li><a href="{{ service.url | relative_url }}">{{ service.title }}</a> </li>
               {% endfor %}
-						</ul>
+            </ul>
 
-					</div>
-				</div>
-				<!-- /lc-block -->
-			</div>
-			<div class="col mb-3">
-				<div class="lc-block mb-4">
-					<div editable="rich">
-						<a href="{% link contactus.md %}" class="text-decoration-none"><h4 class="">Contact Us</h4></a>
-					</div>
-				</div>
-				<!-- /lc-block -->
-				<div class="lc-block small">
-					<div editable="rich" class="footer-links-list">
+          </div>
+        </div>
+        <!-- /lc-block -->
+      </div>
+      <div class="col mb-3">
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <a href="{% link contactus.md %}" class="text-decoration-none">
+              <h4 class="">Contact Us</h4>
+            </a>
+          </div>
+        </div>
+        <!-- /lc-block -->
+        <div class="lc-block small">
+          <div editable="rich" class="footer-links-list">
 
-						<ul>
-							<li>Email: {{ site.email }}</li>
-							<li>Phone: {{ site.phone }}</li>
-						</ul>
+            <ul>
+              <li>Email: {{ site.email }}</li>
+              <li>Phone: {{ site.phone }}</li>
+            </ul>
 
-					</div>
-				</div>
-				<!-- /lc-block -->
-			</div>
-		</div>
-	</div>
+          </div>
+        </div>
+        <!-- /lc-block -->
+      </div>
+    </div>
+  </div>
 </section>
