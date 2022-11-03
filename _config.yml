@@ -19,14 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Nile Global Trading
-email: your-email@example.com
+email: info@nileglobaltrade.com
 phone: + 00000000000
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Nile Global Trading offers services for manufacturers in the Middle East and Africa to sell their products in China.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nileglobaltrading.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nileglobaltrade.com" # the base hostname & protocol for your site, e.g. http://example.com
 logomark: "/assets/nile-logo-no-text.png"
 logocombo:
 
