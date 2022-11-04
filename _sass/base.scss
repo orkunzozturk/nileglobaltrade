@@ -1,5 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/playfair-display');
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
+@import url('http://fonts.cdnfonts.com/css/playfair-display');
+@import url('http://fonts.cdnfonts.com/css/futura-pt');
 
 //Colors
 $nile-navy: #15456d;
@@ -25,8 +25,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: normal;
 }
 
 main > div {
@@ -36,16 +34,20 @@ main > div {
   overflow: hidden;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   // text-align: center;
   color: gray;
   font-family: 'Futura PT', sans-serif;
 }
-
+p {
+  font-family: 'Playfair Display', sans-serif;
+}
 .navigation{
     font-family: 'Futura PT', sans-serif;
 }
-
+.btn {
+  font-family: 'Futura PT', sans-serif;
+}
 
 // Features cards
 .wrapper{margin:10vh}
