@@ -11,11 +11,11 @@ members:
     weight: 1
   - title: "William Qian 🇨🇳"
     image: "images/team/william.jpg"
-    jobtitle: "asd"
+    jobtitle: "Marketing Manager"
     linkedinurl: ""
     weight: 3
   - title: "Hussein Daher"
     image: "images/team/hussein.jpg "
     jobtitle: "Middle East Sales Manager"
     linkedinurl: ""
-    weight: 1
+    weight: 4
